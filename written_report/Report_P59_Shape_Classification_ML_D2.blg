@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Santana_Report_P100_Vehicle_Classification_ML_D1.aux
+The style file: unsrt.bst
+Database file #1: bibtex_references_project.bib
+You've used 2 entries,
+            1791 wiz_defined-function locations,
+            460 strings with 4025 characters,
+and the built_in function-call counts, 300 in all, are:
+= -- 25
+> -- 12
+< -- 1
++ -- 5
+- -- 3
+* -- 14
+:= -- 62
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 15
+empty$ -- 27
+format.name$ -- 3
+if$ -- 61
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 1
+newline$ -- 13
+num.names$ -- 2
+pop$ -- 3
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 6
+stack$ -- 0
+substring$ -- 0
+swap$ -- 2
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 2
+width$ -- 3
+write$ -- 24
