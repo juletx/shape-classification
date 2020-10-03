@@ -9,12 +9,9 @@
 %\documentstyle[nips13submit_09,times,art10]{article} % For LaTeX 2.09
 
 
+\title{Shape classification using supervised classifiers}
 
-
-\title{Vehicle recognition using supervised classifiers}
-
-
-\author{Student1 and Student2}
+\author{Julen Etxaniz and Ibon Urbina}
 
 % The \author macro works with any number of authors. There are two commands
 % used to separate the names and addresses of multiple authors: \And and \AND.
@@ -31,30 +28,51 @@
 
 \begin{document}
 
-
 \maketitle
 
-
-
 \begin{abstract}
-  In this document we report our proposal for the application of supervised classification methods to the vehicle recognition problem. The classifiers that we have selected for the classification tasks were: Linear discriminant analysis, Logistic regression, and Decision Trees. We have implemented the classification process using the scikit-learn and pandas library. We have learned the classifiers using the train data and computing the accuracy in the test data. From our results the best accuracy has been produced by the Logistic Regression Classifier.
+  In this document we report our proposal for the 	application of supervised classification methods to the shape classification problem. The datasets we have selected are [plane and car shapes]. The classifiers that we have selected for the classification tasks were: [Linear discriminant analysis, Logistic regression, and Decision Trees]. We have implemented the classification process using the [scikit-learn and pandas library]. We have learned the classifiers using the train data and computing the accuracy in the test data. From our results the best accuracy has been produced by the [Logistic Regression Classifier].
 \end{abstract}
 
+\tableofcontents
+\newpage
+
 \section{Description of the problem}
+The task we have to solve is the classification of the shape datasets, introduced in \cite{Siebert:1987} and available from \url{http://biomecis.uta.edu/shape_data.htm}. 
  
- The task we have to solve is the classification of the  ``Vehicle dataset'', introduced in \cite{Siebert:1987} and available from the UCI machine learning repository \cite{Blake_and_Merz:1998}. 
- 
- The dataset includes features extracted from silhuatte images of four model vehicles:  a double decker bus, Cheverolet van, Saab 9000 and an Opel Manta 400.  The goal of the project is to predict the class of vehicle, among these four different types.
+There are 4 shape datasets available. We have selected the plane and car datasets. In each dataset, Cartesian coordinates of each point on the perimeter of each shape are stored as MATLAB data files named as $Class\%d\_Sample\%d.mat$.
 
-  The database has the following characteristics: 
-
+\subsection{Plane dataset}
+The plane dataset has the following characteristics:
 \begin{itemize}
-  \item $18$ attributes.
-  \item $4$ classes: 'van', 'saab', 'bus', 'opel'.
-  \item $846$ instances. 
-  \item The data is almost perfectly balanced. The number of instances in each class are: 199, 217, 218, 212.
+    \item ? attributes.
+    \item $7$ classes: (a) Mirage, (b) Eurofighter, (c) F-14 wings closed, (d) F-14 wings opened, (e) Harrier, (f) F-22, (g) F-15. See Figure \ref{fig:plane}.
+    \item $210$ instances. 
+    \item The data is perfectly balanced. There are 30 instances in each class.
 \end{itemize}
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{shape_plane.png}
+    \caption{$7$ plane classes: (a) Mirage, (b) Eurofighter, (c) F-14 wings closed, (d) F-14 wings opened, (e) Harrier, (f) F-22, (g) F-15.}
+    \label{fig:plane}
+\end{figure}
+
+\subsection{Car dataset}
+The car dataset has the following characteristics:
+\begin{itemize}
+    \item ? attributes.
+    \item $4$ classes: (a) Sedan, (b) Pickup, (c) Minivan, (d) SUV. See Figure \ref{fig:car}.
+    \item $120$ instances. 
+    \item The data is perfectly balanced. There are 30 instances in each class.
+\end{itemize}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{shape_car.png}
+    \caption{$4$ car classes: (a) Sedan, (b) Pickup, (c) Minivan, (d) SUV.}
+    \label{fig:car}
+\end{figure}
 
 \section{Description of our approach}
   
