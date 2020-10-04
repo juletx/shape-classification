@@ -31,19 +31,22 @@
 \maketitle
 
 \begin{abstract}
-  In this document we report our proposal for the 	application of supervised classification methods to the shape classification problem. The datasets we have selected are [plane and car shapes]. The classifiers that we have selected for the classification tasks were: [Linear discriminant analysis, Logistic regression, and Decision Trees]. We have implemented the classification process using the [scikit-learn and pandas library]. We have learned the classifiers using the train data and computing the accuracy in the test data. From our results the best accuracy has been produced by the [Logistic Regression Classifier].
+  In this document we report our proposal for the application of supervised classification methods to the shape classification problem. The datasets we have selected are [plane and car shapes]. The classifiers that we have selected for the classification tasks were: [Linear discriminant analysis, Logistic regression, and Decision Trees]. We have implemented the classification process using the [scikit-learn and pandas library]. We have learned the classifiers using the train data and computing the accuracy in the test data. From our results the best accuracy has been produced by the [Logistic Regression Classifier].
 \end{abstract}
 
 \tableofcontents
 \newpage
 
 \section{Description of the problem}
-The task we have to solve is the classification of the shape datasets, introduced in \cite{Siebert:1987} and available from \url{http://biomecis.uta.edu/shape_data.htm}. 
+The task we have to solve is the classification of the shape datasets, introduced in \cite{Thakoor:2007} \cite{Thakoor:2005-July} \cite{Thakoor:2005-Oct} and available from \url{http://biomecis.uta.edu/shape_data.htm}. 
  
 There are 4 shape datasets available. We have selected the plane and car datasets. In each dataset, Cartesian coordinates of each point on the perimeter of each shape are stored as MATLAB data files named as $Class\%d\_Sample\%d.mat$.
 
 \subsection{Plane dataset}
+
+Shape database was created by taking 640X480 resolution pictures of replica models of airplanes from top.
 The plane dataset has the following characteristics:
+
 \begin{itemize}
     \item ? attributes.
     \item $7$ classes: (a) Mirage, (b) Eurofighter, (c) F-14 wings closed, (d) F-14 wings opened, (e) Harrier, (f) F-22, (g) F-15. See Figure \ref{fig:plane}.
@@ -59,7 +62,10 @@ The plane dataset has the following characteristics:
 \end{figure}
 
 \subsection{Car dataset}
+
+Approach discussed in \cite{Thakoor:2005-Sept} was applied to 320X240 resolution videos to extract these shapes. As object extraction approach does not deal with shadows, the shapes are distorted in the bottom half. Samples show larger within-class variation, because vehicles of different makes and models vary.
 The car dataset has the following characteristics:
+
 \begin{itemize}
     \item ? attributes.
     \item $4$ classes: (a) Sedan, (b) Pickup, (c) Minivan, (d) SUV. See Figure \ref{fig:car}.
@@ -212,7 +218,7 @@ col\_0 &   0 &   1 &   2 &   3 \\\hline
 The analysis of the confusion matrices shows that the most difficult discrimination, for all algorithms is between classes (1 and 3), which correspond to 'saab' and 'opel' vehicles. This occurs because the Saab 9000 and an Opel Manta 400 cars are more similar between them, than their difference to  a double decker bus or a  Cheverolet van. Therefore, even if the features are precise, they are not sufficient to make a good discrimination between these two vehicles. 
 
 \section{Conclusions}
-  In our project we have applied  LDA, Logistic regression, and Decision tree classifiers  to the ``Vehicle dataset'', introduced in \cite{Siebert:1987}. We have computed the accuracy of these classifiers and observed that Logistic regression produces the highest accuracy. We have also observed, from the analysis of the confusion matrices, that all classifiers make a poor discrimination between the Saab 9000 and an Opel Manta 400 cars. 
+  In our project we have applied  [LDA, Logistic regression, and Decision tree classifiers] to the plane and car shape datasets, introduced in \cite{Thakoor:2007} \cite{Thakoor:2005-July} \cite{Thakoor:2005-Oct}. We have computed the accuracy of these classifiers and observed that [Logistic regression] produces the highest accuracy. We have also observed, from the analysis of the confusion matrices, that all classifiers make a poor discrimination between the Saab 9000 and an Opel Manta 400 cars. 
 
 
  \bibliographystyle{unsrt}
