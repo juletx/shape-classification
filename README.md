@@ -8,7 +8,7 @@
 
 ## Objective: The goal of the project is to compare different classification algorithms on the solution of plane and car shape datasets.
 
-## Description: This repository contains a written report describing the solution, a Jupyter Notebook with the implementation and the shape datasets.
+## Description: This repository contains a project description, a written report describing the solution, a Jupyter Notebook with the implementation and the shape datasets.
 
 ## Contents of the Notebook:
 
@@ -16,7 +16,7 @@
 
 ### 2.Reading the datasets
 
-### 3.Preprocessing the datasets-Preprocessing-the-datasets
+### 3.Preprocessing the datasets
 
 ### 4.Scaling the data
 
