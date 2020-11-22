@@ -1,0 +1,26 @@
+Ibon Urbina and Julen Etxaniz
+P59_Shape_Classification_ML_D2
+Mark: 8.25
+
+Positive points:
+ - The main goal of the project has been achieved.
+ - There is much coding work done
+ - Different classifiers were used
+ - The Notebook organization is good, with sections clearly structured. It is well commented.
+ - The writing and organization in the report are in general very good.
+ - Different feature selection and feature engineering methods have been used.
+ - In addition to the performance metric, confusion matrices have been computed.
+ - References were considered and added.
+ 
+
+Negative points:
+ - There is an important error in the way feature selection is applied. It is applied to the complete dataset (plane_features). We should first split the data between train and test, then lear features in the train data, finally use those selected features for train and test. If we use the complete data then we are indirectly using the test data for the selection, this like looking into the future to select the best features.
+ - The standarization is learned on all the dataset. This should be done using only the train data and then applying on train and test.
+  - The presentation of results in section 4.4.1 is difficult to follow. I would have been better to present these results as bar plots or a better structured table. You should try to improve visualization of results for future projets.
+  - Some paragraphs have been copied twice
+  - There are some very few grammatical mistakes and typos in the report.
+  - In the references, markov should be Markov.
+    
+
+Suggestion:
+  Try to write in a more formal way, avoid using "you" in the text, use impersonal writing instead.
